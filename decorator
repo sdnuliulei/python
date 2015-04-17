@@ -1,0 +1,8 @@
+### 装饰器
+···python
+def log(func):
+    def wrapper(*args,**kw):
+         print "call %s ()" % func.__name__
+         retrun func(*args,**kw)
+    return wrapper
+···
